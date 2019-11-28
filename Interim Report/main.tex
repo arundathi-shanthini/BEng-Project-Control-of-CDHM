@@ -4,6 +4,8 @@
 \usepackage{fontspec}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage[titletoc]{appendix}
+\usepackage{pdfpages} 
 
 \setmainfont[
 BoldFont=arialbd.ttf,
@@ -72,6 +74,7 @@ BoldItalicFont=arialbi.ttf
 - has no electronics in the robot itself makes it access hazardous environments with no issues (easy risk assessment) benign 
 - high data quality 
 \section{Aims and Objectives}
+
 \section{Literature Review}
 \section{Approach}%Description of Approach and Updated Gantt Chart
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,5 +99,16 @@ BoldItalicFont=arialbi.ttf
 \section{Failure Risk Assessment}
 \section{Safety Risk Assessment}
 \section{Additional Work to complete goals}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%% APPENDIX %%%%%%%%%%%%%%%%%
+\begin{appendices}
+	\chapter{Project Gantt Chart}
+	The following page contains the Project Gantt Chart.
+	\includepdf[page=-]{files/Gantt Chart}
+	\chapter{Risk Assessment}
+	The following pages includes a summary of the approved risk assessment generated using RiskNET.
+	\includepdf[page=-]{files/Risk Assessment}
+\end{appendices}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
